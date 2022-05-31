@@ -1,7 +1,4 @@
 import Vue from 'vue'
-<<<<<<< HEAD
-import { Button, Form, FormItem, Input, Message } from 'element-ui'
-=======
 import {
   Button,
   Form,
@@ -27,18 +24,18 @@ import {
   Tooltip,
   Pagination,
   Dialog,
-  MessageBox
+  MessageBox,
+  Tag,
+  Tree,
+  Select,
+  Option
 } from 'element-ui'
->>>>>>> user
+import { options } from 'less'
 
 Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
-<<<<<<< HEAD
-// 将弹框组件挂载到Vue的原型对象上
-Vue.prototype.$message = Message
-=======
 Vue.use(Container)
 Vue.use(Header)
 Vue.use(Aside)
@@ -58,7 +55,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 // 将弹框组件挂载到Vue的原型对象上
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
->>>>>>> user

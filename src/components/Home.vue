@@ -1,9 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div>
-    <el-button type="info" @click="logout">退出</el-button>
-  </div>
-=======
   <el-container class="home-container">
     <!--头部区域-->
     <el-header>
@@ -66,13 +61,10 @@
       </el-main>
     </el-container>
   </el-container>
->>>>>>> user
 </template>
 
 <script>
 export default {
-<<<<<<< HEAD
-=======
   data() {
     return {
       // 左侧菜单数据
@@ -94,15 +86,12 @@ export default {
     this.getMenuList()
     this.activePath = window.sessionStorage.getItem('activePath')
   },
->>>>>>> user
   methods: {
     logout() {
       // 清空token
       window.sessionStorage.clear()
       // 跳转到登录页
       this.$router.push('login')
-<<<<<<< HEAD
-=======
     },
     async getMenuList() {
       const { data: res } = await this.$http.get('menus')
@@ -118,15 +107,11 @@ export default {
     saveNavState(activePath) {
       window.sessionStorage.setItem('activePath', activePath)
       this.activePath = activePath
->>>>>>> user
     }
   }
 }
 </script>
 
-<<<<<<< HEAD
-<style lang="less" scoped></style>
-=======
 <style lang="less" scoped>
 .home-container {
   height: 100%;
@@ -169,4 +154,3 @@ export default {
   cursor: pointer;
 }
 </style>
->>>>>>> user
